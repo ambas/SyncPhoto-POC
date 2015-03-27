@@ -1,0 +1,6 @@
+framework module SDWebImage {
+  umbrella header "Pods-SyncPhoto-POC-SDWebImage-umbrella.h"
+
+  export *
+  module * { export * }
+}

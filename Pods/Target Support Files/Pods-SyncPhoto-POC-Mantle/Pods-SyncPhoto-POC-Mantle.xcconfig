@@ -1,0 +1,1 @@
+PODS_SYNCPHOTO_POC_MANTLE_OTHER_LDFLAGS = -framework "Foundation"

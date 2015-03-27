@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F1E6E9CE9A76AF8F3CE1793 /* Pods_SyncPhoto_POC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993A801216E74B2A2B0A6DFC /* Pods_SyncPhoto_POC.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F536F3FA1AC5E3D7008883EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F536F3F91AC5E3D7008883EE /* main.m */; };
+		F536F3FD1AC5E3D7008883EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F536F3FC1AC5E3D7008883EE /* AppDelegate.m */; };
+		F536F4001AC5E3D7008883EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F536F3FF1AC5E3D7008883EE /* ViewController.m */; };
+		F536F4031AC5E3D7008883EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F536F4011AC5E3D7008883EE /* Main.storyboard */; };
+		F536F4051AC5E3D7008883EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F536F4041AC5E3D7008883EE /* Images.xcassets */; };
+		F536F4081AC5E3D7008883EE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F536F4061AC5E3D7008883EE /* LaunchScreen.xib */; };
+		F536F4141AC5E3D7008883EE /* SyncPhoto_POCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F536F4131AC5E3D7008883EE /* SyncPhoto_POCTests.m */; };
+		F536F4201AC5E3F9008883EE /* AMMultiPeer.m in Sources */ = {isa = PBXBuildFile; fileRef = F536F41F1AC5E3F9008883EE /* AMMultiPeer.m */; };
+		F54392381AC5F37C00C8E838 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = F54392371AC5F37C00C8E838 /* Photo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F536F40E1AC5E3D7008883EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F536F3EC1AC5E3D7008883EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F536F3F31AC5E3D7008883EE;
+			remoteInfo = "SyncPhoto-POC";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		993A801216E74B2A2B0A6DFC /* Pods_SyncPhoto_POC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SyncPhoto_POC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BDE44DA16B6E39963CEE5D4 /* Pods-SyncPhoto-POC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyncPhoto-POC.release.xcconfig"; path = "Pods/Target Support Files/Pods-SyncPhoto-POC/Pods-SyncPhoto-POC.release.xcconfig"; sourceTree = "<group>"; };
+		E2B992FD527BE33DA7765278 /* Pods-SyncPhoto-POC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SyncPhoto-POC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SyncPhoto-POC/Pods-SyncPhoto-POC.debug.xcconfig"; sourceTree = "<group>"; };
+		F536F3F41AC5E3D7008883EE /* SyncPhoto-POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SyncPhoto-POC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F536F3F81AC5E3D7008883EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F536F3F91AC5E3D7008883EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F536F3FB1AC5E3D7008883EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F536F3FC1AC5E3D7008883EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F536F3FE1AC5E3D7008883EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F536F3FF1AC5E3D7008883EE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F536F4021AC5E3D7008883EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F536F4041AC5E3D7008883EE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F536F4071AC5E3D7008883EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F536F40D1AC5E3D7008883EE /* SyncPhoto-POCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SyncPhoto-POCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F536F4121AC5E3D7008883EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F536F4131AC5E3D7008883EE /* SyncPhoto_POCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyncPhoto_POCTests.m; sourceTree = "<group>"; };
+		F536F41E1AC5E3F9008883EE /* AMMultiPeer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMMultiPeer.h; sourceTree = "<group>"; };
+		F536F41F1AC5E3F9008883EE /* AMMultiPeer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMMultiPeer.m; sourceTree = "<group>"; };
+		F54392361AC5F37C00C8E838 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		F54392371AC5F37C00C8E838 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F536F3F11AC5E3D7008883EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F1E6E9CE9A76AF8F3CE1793 /* Pods_SyncPhoto_POC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F536F40A1AC5E3D7008883EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28105EF19CF27FB7B62EEB67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2B992FD527BE33DA7765278 /* Pods-SyncPhoto-POC.debug.xcconfig */,
+				9BDE44DA16B6E39963CEE5D4 /* Pods-SyncPhoto-POC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A4CAF91AFD6EDAD6729EF3E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				993A801216E74B2A2B0A6DFC /* Pods_SyncPhoto_POC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F536F3EB1AC5E3D7008883EE = {
+			isa = PBXGroup;
+			children = (
+				F536F3F61AC5E3D7008883EE /* SyncPhoto-POC */,
+				F536F4101AC5E3D7008883EE /* SyncPhoto-POCTests */,
+				F536F3F51AC5E3D7008883EE /* Products */,
+				28105EF19CF27FB7B62EEB67 /* Pods */,
+				A4CAF91AFD6EDAD6729EF3E5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F536F3F51AC5E3D7008883EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F536F3F41AC5E3D7008883EE /* SyncPhoto-POC.app */,
+				F536F40D1AC5E3D7008883EE /* SyncPhoto-POCTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F536F3F61AC5E3D7008883EE /* SyncPhoto-POC */ = {
+			isa = PBXGroup;
+			children = (
+				F54392351AC5F36700C8E838 /* Model */,
+				F536F41D1AC5E3EC008883EE /* Vendor */,
+				F536F3FB1AC5E3D7008883EE /* AppDelegate.h */,
+				F536F3FC1AC5E3D7008883EE /* AppDelegate.m */,
+				F536F3FE1AC5E3D7008883EE /* ViewController.h */,
+				F536F3FF1AC5E3D7008883EE /* ViewController.m */,
+				F536F4011AC5E3D7008883EE /* Main.storyboard */,
+				F536F4041AC5E3D7008883EE /* Images.xcassets */,
+				F536F4061AC5E3D7008883EE /* LaunchScreen.xib */,
+				F536F3F71AC5E3D7008883EE /* Supporting Files */,
+			);
+			path = "SyncPhoto-POC";
+			sourceTree = "<group>";
+		};
+		F536F3F71AC5E3D7008883EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F536F3F81AC5E3D7008883EE /* Info.plist */,
+				F536F3F91AC5E3D7008883EE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F536F4101AC5E3D7008883EE /* SyncPhoto-POCTests */ = {
+			isa = PBXGroup;
+			children = (
+				F536F4131AC5E3D7008883EE /* SyncPhoto_POCTests.m */,
+				F536F4111AC5E3D7008883EE /* Supporting Files */,
+			);
+			path = "SyncPhoto-POCTests";
+			sourceTree = "<group>";
+		};
+		F536F4111AC5E3D7008883EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F536F4121AC5E3D7008883EE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F536F41D1AC5E3EC008883EE /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				F536F41E1AC5E3F9008883EE /* AMMultiPeer.h */,
+				F536F41F1AC5E3F9008883EE /* AMMultiPeer.m */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		F54392351AC5F36700C8E838 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F54392361AC5F37C00C8E838 /* Photo.h */,
+				F54392371AC5F37C00C8E838 /* Photo.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F536F3F31AC5E3D7008883EE /* SyncPhoto-POC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F536F4171AC5E3D7008883EE /* Build configuration list for PBXNativeTarget "SyncPhoto-POC" */;
+			buildPhases = (
+				9DA1E7CC75E02CB38CDB76B2 /* Check Pods Manifest.lock */,
+				F536F3F01AC5E3D7008883EE /* Sources */,
+				F536F3F11AC5E3D7008883EE /* Frameworks */,
+				F536F3F21AC5E3D7008883EE /* Resources */,
+				73ED23191D07D2B870FBC9D8 /* Embed Pods Frameworks */,
+				D39F2F21A24F3E2B948050BA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SyncPhoto-POC";
+			productName = "SyncPhoto-POC";
+			productReference = F536F3F41AC5E3D7008883EE /* SyncPhoto-POC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F536F40C1AC5E3D7008883EE /* SyncPhoto-POCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F536F41A1AC5E3D7008883EE /* Build configuration list for PBXNativeTarget "SyncPhoto-POCTests" */;
+			buildPhases = (
+				F536F4091AC5E3D7008883EE /* Sources */,
+				F536F40A1AC5E3D7008883EE /* Frameworks */,
+				F536F40B1AC5E3D7008883EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F536F40F1AC5E3D7008883EE /* PBXTargetDependency */,
+			);
+			name = "SyncPhoto-POCTests";
+			productName = "SyncPhoto-POCTests";
+			productReference = F536F40D1AC5E3D7008883EE /* SyncPhoto-POCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F536F3EC1AC5E3D7008883EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = AM;
+				TargetAttributes = {
+					F536F3F31AC5E3D7008883EE = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					F536F40C1AC5E3D7008883EE = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = F536F3F31AC5E3D7008883EE;
+					};
+				};
+			};
+			buildConfigurationList = F536F3EF1AC5E3D7008883EE /* Build configuration list for PBXProject "SyncPhoto-POC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F536F3EB1AC5E3D7008883EE;
+			productRefGroup = F536F3F51AC5E3D7008883EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F536F3F31AC5E3D7008883EE /* SyncPhoto-POC */,
+				F536F40C1AC5E3D7008883EE /* SyncPhoto-POCTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F536F3F21AC5E3D7008883EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F536F4031AC5E3D7008883EE /* Main.storyboard in Resources */,
+				F536F4081AC5E3D7008883EE /* LaunchScreen.xib in Resources */,
+				F536F4051AC5E3D7008883EE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F536F40B1AC5E3D7008883EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73ED23191D07D2B870FBC9D8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SyncPhoto-POC/Pods-SyncPhoto-POC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DA1E7CC75E02CB38CDB76B2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D39F2F21A24F3E2B948050BA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SyncPhoto-POC/Pods-SyncPhoto-POC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F536F3F01AC5E3D7008883EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F536F4001AC5E3D7008883EE /* ViewController.m in Sources */,
+				F536F4201AC5E3F9008883EE /* AMMultiPeer.m in Sources */,
+				F536F3FD1AC5E3D7008883EE /* AppDelegate.m in Sources */,
+				F54392381AC5F37C00C8E838 /* Photo.m in Sources */,
+				F536F3FA1AC5E3D7008883EE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F536F4091AC5E3D7008883EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F536F4141AC5E3D7008883EE /* SyncPhoto_POCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F536F40F1AC5E3D7008883EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F536F3F31AC5E3D7008883EE /* SyncPhoto-POC */;
+			targetProxy = F536F40E1AC5E3D7008883EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F536F4011AC5E3D7008883EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F536F4021AC5E3D7008883EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F536F4061AC5E3D7008883EE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F536F4071AC5E3D7008883EE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F536F4151AC5E3D7008883EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F536F4161AC5E3D7008883EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F536F4181AC5E3D7008883EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2B992FD527BE33DA7765278 /* Pods-SyncPhoto-POC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "SyncPhoto-POC/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F536F4191AC5E3D7008883EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BDE44DA16B6E39963CEE5D4 /* Pods-SyncPhoto-POC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "SyncPhoto-POC/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F536F41B1AC5E3D7008883EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SyncPhoto-POCTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SyncPhoto-POC.app/SyncPhoto-POC";
+			};
+			name = Debug;
+		};
+		F536F41C1AC5E3D7008883EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SyncPhoto-POCTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SyncPhoto-POC.app/SyncPhoto-POC";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F536F3EF1AC5E3D7008883EE /* Build configuration list for PBXProject "SyncPhoto-POC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F536F4151AC5E3D7008883EE /* Debug */,
+				F536F4161AC5E3D7008883EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F536F4171AC5E3D7008883EE /* Build configuration list for PBXNativeTarget "SyncPhoto-POC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F536F4181AC5E3D7008883EE /* Debug */,
+				F536F4191AC5E3D7008883EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F536F41A1AC5E3D7008883EE /* Build configuration list for PBXNativeTarget "SyncPhoto-POCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F536F41B1AC5E3D7008883EE /* Debug */,
+				F536F41C1AC5E3D7008883EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F536F3EC1AC5E3D7008883EE /* Project object */;
+}
