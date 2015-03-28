@@ -114,6 +114,7 @@ NSString *serviceType = @"chat-file";
 - (void)session:(MCSession *)session didReceiveCertificate:(NSArray *)certificate fromPeer:(MCPeerID *)peerID certificateHandler:(void(^)(BOOL accept))certificateHandler {
     if (self.didAcceptConnectionHandler) {
         self.didAcceptConnectionHandler();
+        certificateHandler(YES);
     }
 }
 
