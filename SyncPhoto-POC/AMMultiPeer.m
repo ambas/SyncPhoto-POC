@@ -12,8 +12,12 @@ NSString *serviceType = @"chat-file";
 
 @property (nonatomic, copy) void (^messageHandler)(NSDictionary *result);
 
-@end
+@property (nonatomic, strong) MCPeerID *peerID;
+@property (nonatomic, strong) MCSession *session;
+@property (nonatomic, strong) MCBrowserViewController *browser;
+@property (nonatomic, strong) MCAdvertiserAssistant *advertiser;
 
+@end
 
 @implementation AMMultiPeer
 
@@ -107,6 +111,11 @@ NSString *serviceType = @"chat-file";
     
 }
 
+- (void)session:(MCSession *)session didReceiveCertificate:(NSArray *)certificate fromPeer:(MCPeerID *)peerID certificateHandler:(void(^)(BOOL accept))certificateHandler {
+    if (self.didAcceptConnectionHandler) {
+        self.didAcceptConnectionHandler();
+    }
+}
 
 - (void)browserViewControllerDidFinish:(MCBrowserViewController *)browserViewController {
     [self.browser dismissViewControllerAnimated:YES completion:nil];

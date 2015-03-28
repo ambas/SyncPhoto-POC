@@ -27,6 +27,9 @@
         [self.imageView sd_setImageWithURL:[NSURL URLWithString:photo.photoURL]];
         self.inageName.text = photo.photoName;
     }];
+    [AMMultiPeer sharedManager].didAcceptConnectionHandler = ^{
+        NSLog((@"fuck u"));
+    };
 }
 
 - (void)didReceiveMemoryWarning {

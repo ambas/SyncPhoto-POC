@@ -10,14 +10,10 @@
 #import <MultipeerConnectivity/MultipeerConnectivity.h>
 
 @interface AMMultiPeer : NSObject <MCSessionDelegate, MCBrowserViewControllerDelegate>
-@property (nonatomic, strong) MCPeerID *peerID;
-@property (nonatomic, strong) MCSession *session;
-@property (nonatomic, strong) MCBrowserViewController *browser;
-@property (nonatomic, strong) MCAdvertiserAssistant *advertiser;
-@property (nonatomic, strong) NSMutableArray *connectedDataSource;
 
--(void)advertiseSelf:(BOOL)shouldAdvertise messageHandler:(void (^)(NSDictionary *result))messageHandler ;
-- (void)clear;
+@property (nonatomic, strong) NSMutableArray *connectedDataSource;
+@property (nonatomic, copy) void (^didAcceptConnectionHandler)();
+- (void)advertiseSelf:(BOOL)shouldAdvertise messageHandler:(void (^)(NSDictionary *result))messageHandler;
 - (void)showBrowserWithTarget:(UIViewController*)targer;
 
 + (instancetype)sharedManager;
